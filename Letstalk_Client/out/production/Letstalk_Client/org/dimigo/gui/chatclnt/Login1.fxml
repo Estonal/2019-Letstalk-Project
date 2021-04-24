@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #f0fff0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.chatclnt.ClntController">
+   <children>
+      <AnchorPane layoutX="356.0" layoutY="41.0" prefHeight="318.0" prefWidth="318.0" style="-fx-background-color: f89b00;">
+         <children>
+            <ImageView fx:id="image_rightside_pic" fitHeight="300.0" fitWidth="300.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../../image_rightside.PNG" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <TextField fx:id="tf_nick" layoutX="31.0" layoutY="93.0" prefHeight="42.0" prefWidth="300.0" promptText="Nickname here" />
+      <TextField fx:id="tf_ip" layoutX="31.0" layoutY="142.0" prefHeight="42.0" prefWidth="300.0" promptText="Server IP here" />
+      <Button fx:id="btn_login" layoutX="30.0" layoutY="200.0" mnemonicParsing="false" onAction="#tryLogin" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #2196f3;" text="Try Connect" />
+      <Button fx:id="btn_register" layoutX="30.0" layoutY="257.0" mnemonicParsing="false" onAction="#tryRegister" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #2196f3;" text="Do Nothing" />
+      <Button fx:id="btn_help" layoutX="30.0" layoutY="318.0" mnemonicParsing="false" onAction="#login_help" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #5858FA;" text="Help" />
+      <ImageView fitHeight="68.0" fitWidth="68.0" layoutX="146.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="146.0">
+         <image>
+            <Image url="@../../../../../../../logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="2.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="제작: 최은규, 오류 발생 시 이쪽에 메시지 나옵니다" />
+   </children>
+</AnchorPane>
